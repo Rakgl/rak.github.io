@@ -10,7 +10,7 @@ function goToPage(){
     var correctUsername = "rak";
     var correctPassword = "123";
     if (username === correctUsername && pwd === correctPassword) {
-        window.location.href = '/Assignment03/Product/index.html';
+        window.location.href = 'http://127.0.0.1:5500/Assignment03/Product/index.html';
     }
     else{
         alert("Invalid username or password. Please try again.");
