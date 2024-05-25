@@ -37,7 +37,6 @@ toggle.addEventListener('click',function(){
         body.style.transition="2s";
     }
     else{
-        
         body.style.background="white";
         body.style.color="black";
         body.style.transition="2s";
