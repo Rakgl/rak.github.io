@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 15%;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: red;
+    transition: 1s;
+}
+nav{
+    display: flex;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 18px;
+}
+.searcher{
+    display: flex;
+}
+.search{
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+input[type="search"]{
+    padding: 10px;
+}
+
+.ES{
+    width: 70px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ES p{
+    color: rgb(210, 182, 19);
+}
+.ES i{
+    margin-right: 10px;
+}
+.icon-shop i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.icon-shop i:hover{
+    color: red;
+    cursor: pointer;
+}
+/* swiper */
+.swiper{
+    background-color: rgb(191, 242, 242);
+    height: 40vh;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+}
+.swiper-left{
+    width: 100%;
+    padding: 50px 20px;
+}
+.txt-inline{
+    display: flex;
+    align-items: center;
+}
+.price{
+    font-size: 50px;
+    margin-left: 5px;
+    color: rgb(210, 182, 19);
+}
+.discount{
+    color: gray;
+    font-weight: 1000;
+}
+.swiper-right{
+    width: 100%;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+.block{
+    display: none;
+}
