@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./image/logo.jpg" alt="logo">
+            <h1><a href="#">AltoCargo</a></h1>
+        </div>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">About us</a></li>
+        </nav>
+        <div class="searcher">
+            <input class="search" type="search" name="search" id="search" placeholder="Search">
+            <div class="ES" id="ES">
+                <i class="fa-brands fa-amazon"></i>
+                <p>ES<p>
+            </div>
+        </div>
+        <div class="icon-shop">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+            <select id="theme-selector" onchange="saveTheme()">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </header>
+    <h1 class="title">That neither Distance nor time <br>separate you from your people.</h1>
+    <p class="sub-title">You can now buy your 100% Honduran products with us and we will sen them to the door of <br> your house anywhere in the in United States.</p>
+    <div class="explore">
+        <button class="shopping">
+            <h3>Explore Marketplace</h3>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+    </div>
+    <div class="line-btn">
+        <h2>Popular Products</h2>
+        <div class="btn-list">
+            <button class="btn">All</button>
+            <button class="btn">Popular</button>
+            <button class="btn">Forzem</button>
+            <button class="btn">Crunchy</button>
+        </div>
+    </div>
+    <div class="banner-card">
+        <div class="card-pro">
+            <img src="./image/sports-shoe1-1024x1024.jpg" alt="">
+            <h3>Air Pro X3 Whole Blue</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            </p>
+            <div class="price-qty">
+                <h2>$ 58.00</h2>
+                
+            </div>
+            <div class="detail">
+                <button>More details</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="card-pro">
+            <img src="./image/sports-shoe2-1024x1024.jpg" alt="">
+            <h3>Air Pro X3 Red</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <div class="price-qty">
+                <h2>$ 58.00</h2>
+
+            </div>
+            <div class="detail">
+                <button>More details</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="card-pro">
+            <img src="./image/sports-shoe3-1024x1024.jpg" alt="">
+            <h3>Air Pro X3 Green</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <div class="price-qty">
+                <h2>$ 58.00</h2>
+
+            </div>
+            <div class="detail">
+                <button>More details</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="card-pro">
+            <img src="./image/sports-shoe4-1024x1024.jpg" alt="">
+            <h3>Air Pro X3 Aqua</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <div class="price-qty">
+                <h2>$ 58.00</h2>
+
+            </div>
+            <div class="detail">
+                <button>More details</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <h1 class="title1">? What is</h1>
+            <h1 class="title2">AltoCargo?</h1>
+            <p>We are a Honduran compnay that aim to make Honduran products available to <br>our compatriot in the United States. You buy them, we pack them and send them <br>to your doorstel to anywhere in the United States</p>
+        </div>
+        <div class="main-right">
+            <img src="./image/logo.jpg" alt="">
+        </div>
+    </div>
+    <div class="box-inline">
+        <div class="box" id="box1">
+            <div class="flex">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h2>Globalization</h2>
+            <p>With charge you can order from the comfort your phone</p>
+        </div>
+        <div class="box" id="box2">
+            <div class="flex">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h2>Responsibility</h2>
+            <p>We are leaders in communication, if you have any question</p>
+        </div>
+        <div class="box" id="box3">
+            <div class="flex">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h2>Trust</h2>
+            <p>Have confident in our products 100% Honduran</p>
+        </div>
+    </div>
+    <div class="content" >
+        <div class="left-content">
+            <img src="./image/sports-shoe1-1024x1024.jpg" alt="">
+        </div>
+        <div class="right-content" id="content-right">
+            <h2>Do you want to be part of <br>AltoCargo?</h2>
+        </div>
+    </div>
+    <footer>
+        <div class="left">
+            <div class="left-footer">
+                <h4>CONTACT DETAILS</h4>
+                <div class="ruler"></div>
+                <ul>
+                    <li><a href="">Tel: +(504) 2278-0010</a></li>
+                    <li><a href="">Mov: +(504) 2278-0010</a></li>
+                    <li><a href="">E-mail:infocargo@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="middle-footer">
+                <h4>MENU</h4>
+                <div class="ruler"></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Markplace</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="right-footer">
+            <img src="/image/logo.jpg" alt="">
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
