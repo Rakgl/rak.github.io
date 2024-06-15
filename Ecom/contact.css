@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+.sidepanel{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+.card-panel{
+    margin-bottom:20px;
+    margin-left: 20px;
+}
+.sidepanel p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+}
+.sidepanel button{
+    background-color: #6d7050;
+    width: 95%;
+    color: white;
+    padding: 20px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sidepanel button:hover{
+    background-color: #111;
+    cursor: pointer;
+    transition: 1s;
+}
+.sidepanel a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+} 
+.sidepanel a:hover{
+    color: #f9b856;
+}
+.sidepanel .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+#openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    color: #111;
+    padding: 10px 15px;
+    border: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 30px;
+}
+.brand-name a{
+    text-decoration: none;
+    color: black;
+}
+.nav-left ,.nav-right{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-left a ,.nav-right a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+}
+.nav-left a:hover ,.nav-right a:hover{
+    cursor: pointer;
+    color: black;
+    transition: 2s;
+}
+.nav-left a:hover ,.nav-right a:hover{
+    cursor: pointer;
+    color: black;
+    transition: 2s;
+}
+.nav-right i{
+    font-size: 20px;
+    color: black;
+}
+.include-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.contact{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 80px;
+}
+.left-contact i{
+    color: #6d7050;
+    font-size: 30px;
+    margin:10px 20px;
+}
+.contact-ph{
+    display:flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.contact-ph i{
+    font-size: 30px;
+    margin-right: 30px;
+    color: 
+    #6d7050;
+}
+.contact-txt a{
+    text-decoration: none;
+    color:black;
+}
+.contact-txt p{
+    color: gray;
+    margin-top: 10px;
+}
+label{
+    color: gray;
+    font-size: 20px;
+}
+input{
+    height: 40px;
+    width: 600px;
+    padding: 0px 10px;
+}
+textarea{
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 300px;
+    padding: 10px 10px;
+    font-size: 18px;
+    height: 200px;
+    transition: smooth;
+}
+.btn-send{
+    background-color: #6d7050;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+}
+.btn-send:hover{
+    background-color: #111;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+
+
+
+.container{
+    margin: 200px 0;
+}
+.question{
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+.collapsible-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.collapsible {
+    margin-top: 13px;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-content{
+    margin-top: 1px;
+    padding: 25px 25px;
+    width: 80%;
+    display: none;
+    overflow: hidden;
+    background-color: #2d2d2d;
+}
+.text-drop{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    transition: 10s ease-out;
+}
+.include-content{
+    height: 100vh;
+}
+.content{
+    background: url(./image/recycled-shoe-store-cta-image-bg.jpg);
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 250px;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+}
+.btn button{
+    margin: 20px 20px;
+    padding: 20px 40px;
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+}
+.flex-icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.icon-content{
+    display: flex;
+    font-size: 20px;
+}
+.icon-content p{
+    margin-left: 20px;
+}
+footer{
+    height: 60vh;
+    display: flex;
+    justify-content:space-around;
+    padding: 100px;
+}
+.content-footer p{
+    color: gray;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 33px;
+}
+.content-footer ul{
+    list-style: none;
+    margin-top: 100px;
+}
+.content-footer li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    line-height: 33px;
+}
+.content-footer li a:hover{
+    color: black;
+}

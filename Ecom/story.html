@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ecommerce</title>
+</head>
+<body>
+    <header>
+        <h1 class="brand-name"><a href="./home.html">RLASHOE</a></h1>
+        <nav class="nav-left">
+            <li><a href="./men.html">MEN</a></li>
+            <li><a href="./women.html">WOMEN</a></li>
+            <li><a href="./collection.html">COLLECTION</a></li>
+            <li><a href="./look.html">LOOKBOOK</a></li>
+            <li><a href="./sale.html">SALE</a></li>
+        </nav>
+        <nav class="nav-right">
+            <li><a href="./story.html" style="color: blue;">OUR STORY</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <div id="mySidepanel" class="sidepanel">
+                <div class="header-panel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h1 class="card-panel">Shopping Card</h1>
+                </div>
+                <hr>
+                <p>No products in the cart.</p>
+                <button id="goto" onclick="goto()">continue</button>
+            </div>         
+            <a href="#"><i id="openbtn" onclick="openNav()" class="fa-solid fa-bag-shopping"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <section>
+        <h1 class="title">Our Story</h1>
+        <p class="txt-title">Taking a stylish and sustainable footwear <br> with a focus on creating a positive impact <br> on both the world and the people</p>
+        <iframe width="80%" height="600px" src="https://www.youtube.com/embed/XHOmBV4js_E?si=Kh1j3DETuG3CYg2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="icon">
+            <div class="left-icon">
+                <i class="fa-solid fa-hands-holding"></i>
+                <h2>Ethics and equality</h2>
+                <p>Pellentesque quam convallis massa enim, <br>faucibus ornare sollicitudin gravida justo sit <br> suspendisse pellentesque.</p>
+            </div>
+            <div class="icon-middle">
+                <i class="fa-solid fa-leaf"></i>
+                <h2>Eco-design</h2>
+                <p>Risus leo molestie a aliquam amet urna orci <br>nisl dignissim elementum nibh felis ultrices <br> vitae consectetur.</p>
+            </div>
+            <div class="icon-right">
+                <i class="fa-solid fa-cat"></i>
+                <h2>Wildlife Preservation</h2>
+                <p>Pellentesque nunc ante augue adipiscing <br> sed suspendisse amet sed pellentesque <br>convallis erat nibh vivamus.</p>
+            </div>
+        </div>
+    </section>
+    <div class="mission">
+        <div class="left-mission">
+            <h1>Mission</h1>
+        </div>
+        <div class="right-mission">
+            <p>
+                Pulvinar sed nunc ultrices consequat adipiscing sagittis feugiat at dui, arcu nec <br> id non pellentesque dolor feugiat dolor ac ac sem semper nulla dis vitae, quis <br> elit odio nunc dignissim aliquam ipsum.
+                <br>
+                Mattis pretium nec tellus viverra phasellus sed tortor ac tincidunt adipiscing <br> nibh eget, adipiscing  sit penatibus lobortis placerat</p>
+        </div>
+    </div>
+    <div class="vision">
+        <div class="vision-left">
+            <h1>Vision</h1>
+        </div>
+        <div class="vision-right">
+            <p>Sit etiam est, nunc sollicitudin malesuada tincidunt senectus venenatis,<br> adipiscing nulla vel diam, lorem donec sit blandit nec tortor, diam cras ut velit <br> nulla purus ullamcorper ornare elit bibendum augue.</p>
+        </div>
+    </div>
+    <main>
+        <h1 class="main-title">See how your shoes are made</h1>
+        <p class="main-txt">Urna, felis enim orci accumsan urna blandit egestas mattis egestas feugiat viverra ornare donec <br> adipiscing semper aliquet integer risus leo volutpat nulla enim ultrices</p>
+        <div class="main-include">
+            <div class="main-left">
+                <div class="box1">
+                    <p class="num">1.</p>
+                    <h2>Pet canvas</h2>
+                    <p>Morbi eget bibendum sit <br> adipiscing morbi ac nisl vitae <br> maecenas nulla cursus
+                    </p>
+                </div>
+                <hr>
+                <div class="box2">
+                    <p class="num">2.</p>
+                    <h2>Algae foam + vegan glue</h2>
+                    <p>Enim tincidunt donec vulputate <br> magna pharetra mattis in</p>
+                </div>
+            </div>
+            <div class="main-middle">
+                <img data-aos="fade-up-right" src="./image/recycled-shoe-store-how-shoes-are-made-image.png" alt="">
+            </div>
+            <div class="main-right">
+                <div class="box3">
+                    <p class="num">3.</p>
+                    <h2>Organic cotton</h2>
+                    <p>A vel ipsum, sed dignissim <br> elementum ultrices amet</p>
+                </div>
+                <hr>
+                <div class="box4">
+                    <p class="num">4.</p>
+                    <h2>Organic cotton</h2>
+                    <p>Pellentesque viverra amet netus facilisis amet felis odio tortor orci cursus est</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cycle">
+        <div class="left-cycle">
+            <div class="txt-cycle">
+                <p>Eu eget felis erat mauris aliquam mattis lacus, arcu leo <br> aliquam sapien pulvinar laoreet vulputate sem aliquet <br> phasellus egestas felis, est, vulputate morbi massa <br>mauris vestibulum dui odio.
+                </p>
+            </div>
+            <div class="img-cycle">
+                <img src="./image/recycled-shoe-badge-1.svg" alt="">
+                <img src="./image/recycled-shoe-badge-2.svg" alt="">
+                <img src="./image/recycled-shoe-badge-3.svg" alt="">
+            </div>
+        </div>
+        <div class="right-cycle">
+            <img src="./image/recycled-shoe-store-recycled-circle-iamge.jpg" alt="">
+        </div>
+    </div>
+    <div class="include-content">
+        <div class="content">
+            <h1>Better for People & the Planet</h1>
+            <p>Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate</p>
+            <div class="btn">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+            </div>
+        </div>
+        <div class="flex-icon">
+            <div class="icon-content">
+                <i class="fa-solid fa-lock"></i>
+                <p>Secure Payment</p>
+            </div>
+            <div class="icon-content">
+                <i class="fa-solid fa-truck"></i>
+                <p>Express Shipping</p>
+            </div>
+            <div class="icon-content">
+                <i class="fa-solid fa-rotate-left"></i>
+                <p>Free Return</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="box-footer">
+            <h1>RLASHOE</h1>
+            <div class="content-footer">
+                <p>Praesent eget tortor sit risus <br> egestas nulla pharetra ornare <br> quis bibendum est bibendum <br> sapien proin nascetur</p>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>Shop</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="/men.html">Shop Men</a></li>
+                    <li><a href="/women.html">Shop Wonem</a></li>
+                    <li><a href="/look.html">Lookbook</a></li>
+                    <li><a href="">Gift Card</a></li>
+                    <li><a href="">Sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>About</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Our Materials</a></li>
+                    <li><a href="">Our Value</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">Manufacture</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>Need Help?</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Shipping & Returns</a></li>
+                    <li><a href="">Shoe Care</a></li>
+                    <li><a href="">Size Chart</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

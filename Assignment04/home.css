@@ -23,7 +23,6 @@ header{
 }
 .logo a{
     text-decoration: none;
-    color: black;
 }
 li a:hover{
     color: red;
@@ -36,7 +35,6 @@ nav{
 li a{
     text-decoration: none;
     margin-left: 30px;
-    color: black;
     font-size: 18px;
 }
 .searcher{
@@ -284,4 +282,84 @@ li a{
 }
 .right-footer img{
     height: 100%;
+}
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        text-decoration: none;
+        font-size: 10px;
+    }
+    li a{
+        font-size: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .search{
+        width: 80%;
+    }
+    .icon-shop{
+        display: flex;
+    }
+    .explore{
+        height: 60px;
+        width: 100%;
+    }
+    .shopping{
+        width: 30%;
+        padding: 10px 5px;
+    }
+    .line-btn ,.main,.banner-card{
+        padding: 0 10px;
+    }
+    .card-pro{
+        height: 350px;
+        width: 250px;
+        text-align: center;
+    }
+    footer{
+        display: ;
+    }
+}
+@media (max-width: 576px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        text-decoration: none;
+        font-size: 10px;
+    }
+    li a{
+        font-size: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .search{
+        width: 80%;
+    }
+    .icon-shop{
+        display: flex;
+    }
+    .main{
+        margin-top: -100px;
+    }
+    .explore{
+        height: 60px;
+        width: 100%;
+    }
+    .shopping{
+        width: 30%;
+        padding: 10px 5px;
+    }
+    .line-btn ,.main,.banner-card{
+        padding: 0 10px;
+    }
+    .card-pro{
+        height: 350px;
+        width: 250px;
+        text-align: center;
+    }
 }
