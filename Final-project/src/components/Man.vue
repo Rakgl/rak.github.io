@@ -1,0 +1,96 @@
+<template>
+    <header>
+        <h1 class="brand-name"><a href="./home.html">RLASHOE</a></h1>
+        <nav class="nav-left">
+            <li><a href="./men.html">MEN</a></li>
+            <li><a href="./women.html" style="color: blue;">WOMEN</a></li>
+            <li><a href="./collection.html">COLLECTION</a></li>
+            <li><a href="./look.html">LOOKBOOK</a></li>
+            <li><a href="./sale.html">SALE</a></li>
+        </nav>
+        <nav class="nav-right">
+            <li><a href="./story.html">OUR STORY</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <div id="mySidepanel" class="sidepanel">
+                <div class="header-panel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h1 class="card-panel">Shopping Card</h1>
+                </div>
+                <hr>
+                <p>No products in the cart.</p>
+                <button id="goto" onclick="goto()">continue</button>
+            </div>        
+            <a href="#"><i id="openbtn" onclick="openNav()" class="fa-solid fa-bag-shopping"></i></a>
+            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+    <div class="include-content">
+        <div class="content">
+            <h1>Better for People & the Planet</h1>
+            <p>Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate</p>
+            <div class="btn">
+                <button>SHOP MEN</button>
+                <button>SHOP WOMEN</button>
+            </div>
+        </div>
+        <div class="flex-icon">
+            <div class="icon-content">
+                <i class="fa-solid fa-lock"></i>
+                <p>Secure Payment</p>
+            </div>
+            <div class="icon-content">
+                <i class="fa-solid fa-truck"></i>
+                <p>Express Shipping</p>
+            </div>
+            <div class="icon-content">
+                <i class="fa-solid fa-rotate-left"></i>
+                <p>Free Return</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="box-footer">
+            <h1>RLASHOE</h1>
+            <div class="content-footer">
+                <p>Praesent eget tortor sit risus <br> egestas nulla pharetra ornare <br> quis bibendum est bibendum <br> sapien proin nascetur</p>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>Shop</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="/men.html">Shop Men</a></li>
+                    <li><a href="/women.html">Shop Wonem</a></li>
+                    <li><a href="">Lookbook</a></li>
+                    <li><a href="">Gift Card</a></li>
+                    <li><a href="">Sale</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>About</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Our Materials</a></li>
+                    <li><a href="">Our Value</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">Manufacture</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h1>Need Help?</h1>
+            <div class="content-footer">
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Shipping & Returns</a></li>
+                    <li><a href="">Shoe Care</a></li>
+                    <li><a href="">Size Chart</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+</template>
