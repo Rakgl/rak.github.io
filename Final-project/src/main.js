@@ -1,7 +1,15 @@
-// import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/style.css';
+import './assets/add.js';
+import '@fortawesome/fontawesome-free/css/all.css';
+// import 'swiper/swiper-bundle.css';
+// import AOS from 'aos';
+import 'aos/dist/aos.css';
+import router from './router';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import '/src/assets/style.css';
+const app = createApp(App)
 
-createApp(App).mount('#app')
+app.use(router)
+app.mount('#app')

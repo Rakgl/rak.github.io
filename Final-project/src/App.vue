@@ -1,13 +1,8 @@
 <script setup>
-	import Header from './components/Header.vue';
-	import Man from './components/Man.vue';
-	import Women from './components/Women.vue';
+    import { RouterView } from 'vue-router';
+    import './assets/add.js';
 </script>
-
-
+ 
 <template>
-	<Header/>
-	<Man/>
-	<Women/>
+    <RouterView/>
 </template>
-
