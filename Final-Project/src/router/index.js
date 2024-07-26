@@ -6,46 +6,48 @@ import AboutUs from '../views/AboutUs.vue';
 import ContactUs from '../views/ContactUs.vue';
 import ListMenu from '../views/ListMenu.vue';
 import AddToCard from '../views/AddToCard.vue';
+import adminRouter from './adminRouter';
 
+const routes = [
+    {
+        path: '/',
+        name: 'home',
+        component: Home
+    },
+    {
+        path: '/shop',
+        name: 'shop',
+        component: Shop
+    },
+    {
+        path: '/blog',
+        name: 'blog',
+        component: Blog
+    },
+    {
+        path: '/about/us',
+        name: 'about us',
+        component: AboutUs
+    },
+    {
+        path: '/contact/us',
+        name: 'contact us',
+        component: ContactUs
+    },
+    {
+        path: '/list/menu',
+        name: 'list menu',
+        component: ListMenu
+    },
+    {
+        path: '/add/to/card',
+        name: 'add to card',
+        component: AddToCard
+    },
+]
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: '/shop',
-            name: 'shop',
-            component: Shop
-        },
-        {
-            path: '/blog',
-            name: 'blog',
-            component: Blog
-        },
-        {
-            path: '/about/us',
-            name: 'about us',
-            component: AboutUs
-        },
-        {
-            path: '/contact/us',
-            name: 'contact us',
-            component: ContactUs
-        },
-        {
-            path: '/list/menu',
-            name: 'list menu',
-            component: ListMenu
-        },
-        {
-            path: '/add/to/card',
-            name: 'add to card',
-            component: AddToCard
-        },
-    ]
+    routes: [...routes, ...adminRouter.options.routes] 
     })
 export default router

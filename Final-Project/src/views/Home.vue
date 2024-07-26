@@ -13,6 +13,7 @@
     import bestsell from '../components/home/bestsell.vue';
     import LogoBrand from '../components/LogoBrand.vue';
     import Footer from '../components/Footer.vue';
+    // import { UtilityFunc } from '../assets/add.js';
 </script>
 <template>
     <HeaderCom/>

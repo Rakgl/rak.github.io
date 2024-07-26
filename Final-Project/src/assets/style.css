@@ -38,6 +38,9 @@ body{
 .site-icon i{
     margin-right: 5px;
 }
+.site-icon a{
+    text-decoration: none;
+}
 .header-inline{
     display: flex;
     justify-content: space-between;
@@ -79,6 +82,89 @@ nav:hover{
 .order-pro a:hover{
     color: #ffcc00;
 }
+.order-pro span{
+    margin-top: -10px;
+}
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    top: 0;
+    right: 0; /* Corrected right positioning */
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.2s; /* Transition should be applied to width */
+}
+
+.header-panel {
+    background-color: #aae509;
+}
+
+.card-panel {
+    padding: 20px 0;
+    margin-left: 20px;
+}
+
+.sidepanel p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+.sidepanel button {
+    background-color: #aae509;
+    width: 95%;
+    color: white;
+    padding: 20px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidepanel button:hover {
+    background-color: #111;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.sidepanel a {
+    padding: 20px 10px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f9b856;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#openbtn {
+    cursor: pointer;
+    color: #111;
+    border: none;
+}
+
+#openbtn:hover {
+    color: #f9b856;
+}
+
 /* --------------Header-end----------------------- */
 
 /*---------------Footer----------------------------*/
@@ -298,11 +384,15 @@ nav:hover{
 }
 .box img:hover{
     transform: translateY(-15px);
-    transition: 1s ease-out;
+    transition: 1s ease-in-out;
 }
 .box{
     position: relative;
     width: 100%;
+    overflow: hidden;
+}
+.box img{
+    transition: 1s ease-out;
 }
 .txt-overlay{
     position: absolute;
@@ -656,7 +746,7 @@ nav:hover{
 }
 .card-dea{
     display: flex;
-    width: 580px;
+    width: 520px;
 }
 .card-dea-left{
     width: 230px;
@@ -926,7 +1016,7 @@ nav:hover{
 
 .product-image i {
     position: absolute;
-    color: black;
+    color:#f9b856;
     padding: 10px;
     border-radius: 50%;
     font-size: 18px;
@@ -1241,4 +1331,109 @@ iframe{
 }
 .content p{
     padding: 20px;
+}
+/* ------------------------------shop-list */
+.choose-option{
+    margin: 30px 0;
+    padding: 5px;
+}
+.container-shop{
+    display: flex;
+    flex-wrap:wrap;
+
+    margin-bottom: 50px;
+}
+/* -----------------------------end-shop-list */
+.quick-view-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2980b9;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.quick-view-modal {
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+   
+}
+.modal-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: scroll;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 50px;
+    height: 60vh;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+.pro-img{
+    display: flex;
+    justify-content: center;
+}
+.select-qty{
+    text-align: justify;
+    align-items: center;
+    line-height: 35px;
+    width: 50%;
+}
+.select-qty h1{
+    font-size: 30px;
+    text-align: start;
+}
+.close-btn {
+    position: absolute;
+    font-size: 50px;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.quantity-counter {
+    line-height: 30px;
+}
+.product-price span{
+    color: black;
+}
+.quantity-counter button {
+    width: 50px;
+}
+.quantity-counter input {
+    width: 50px;
+    text-align: center;
+}
+.product-item {
+    margin: 100px 20px;
+    width: 10%;
+}
+.product-item h1{
+    font-size: 30px;
+}
+.product-item img {
+    width: 100%;
+    height: auto;
 }

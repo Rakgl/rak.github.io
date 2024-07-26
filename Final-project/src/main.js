@@ -2,7 +2,6 @@ import { createApp } from 'vue';
 import App from './App.vue';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/style.css';
-import './assets/add.js';
 import '@fortawesome/fontawesome-free/css/all.css';
 // import 'swiper/swiper-bundle.css';
 // import AOS from 'aos';

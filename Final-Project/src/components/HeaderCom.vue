@@ -1,7 +1,3 @@
-<!-- <script setup>
-    import { RouterLink, RouterView } from 'vue-router'
-</script> -->
-
 <template>
     <header>
         <div class="store-note">
@@ -22,8 +18,10 @@
                         example@gmail.com
                     </div>
                     <div class="site-icon">
-                        <i class="fa-solid fa-user"></i>
-                        Login
+                        <RouterLink to="/admin/login">
+                            <i class="fa-solid fa-user"></i>
+                            Login
+                        </RouterLink>
                     </div>
                 </div>        
             </div>
@@ -44,10 +42,47 @@
                     <li><RouterLink to="/contact/us" >Contact Us</RouterLink></li>
                 </nav>
                 <div class="order-pro">
-                    <RouterLink to="/list/menu"><i class="fa-regular fa-heart"></i></RouterLink>
-                    <RouterLink to="/add/to/card"><i class="fa-solid fa-cart-shopping"></i></RouterLink>
+                    <RouterLink to="/list/menu"><i class="fa-regular fa-heart"></i><sup>{{ number }}</sup></RouterLink>
+                    <div>
+                        <div id="mySidepanel" class="sidepanel">
+                        <div class="header-panel">
+                            <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
+                            <h1 class="card-panel">Shopping Cart</h1>
+                        </div>
+                        <hr>
+                        <p>No products in the cart.</p>
+                        <button id="goto" @click="goto">Continue</button>
+                        </div>
+                        <RouterLink><i id="openbtn" @click="openNav" class="fa-solid fa-cart-shopping"></i></RouterLink>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 </template>
+
+<script>
+export default{
+    methods:{
+        openNav(){
+            const sidepanel = document.getElementById("mySidepanel");
+            if (sidepanel){
+                sidepanel.style.width = "400px";
+                sidepanel.style.boxShadow = "10px 10px 10px 10px rgba(0, 0, 0, 0.6)";
+                document.body.style.overflow = "hidden";
+            }
+        },
+        closeNav(){
+            const sidepanel = document.getElementById("mySidepanel");
+            if (sidepanel) {
+                sidepanel.style.width = "0";
+                document.body.style.overflow = "auto";
+            }
+        },
+        goto(){
+            window.location.href = "/shop";
+        },
+        
+    }
+}
+</script>
